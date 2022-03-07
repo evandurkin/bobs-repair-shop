@@ -1,0 +1,53 @@
+<!--
+  Title: Bob's Computer Repair Shop
+  Author: Evan Durkin
+  Date: March 6, 2022
+  References:
+  - checkbox setup: https://stackoverflow.com/questions/56859603/total-sum-with-mat-checkbox-in-angular/56859725
+-->
+
+<div>
+  <mat-card>
+    <mat-card-title><h2 style="font-size: 26pt;">Select a Service</h2></mat-card-title>
+    <mat-card-content style="display: block;">
+      <!--services available-->
+      <mat-checkbox [(ngModel)]="passwordReset.isChecked" >Password Reset $39.99</mat-checkbox><br/><br/>
+      <mat-checkbox [(ngModel)]="spywareRemoval.isChecked" >Spyware Removal $99.99</mat-checkbox><br/><br/>
+      <mat-checkbox [(ngModel)]="ramUpgrade.isChecked" >RAM Upgrade $129.99</mat-checkbox><br/><br/>
+      <mat-checkbox [(ngModel)]="softwareInstallation.isChecked" >Software Installation $49.99</mat-checkbox><br/><br/>
+      <mat-checkbox [(ngModel)]="tuneUp.isChecked" >Tune-up $89.99</mat-checkbox><br/><br/>
+      <mat-checkbox [(ngModel)]="keyboardCleaning.isChecked" >Keyboard Cleaning $45.00</mat-checkbox><br/><br/>
+      <br />
+      <form class="example-form">
+        <h2 style="font-size: 26pt;">Standard Fees</h2>
+        <!--Input for description of labor services-->
+        <div style="display: inline-flex;">
+          <p>Parts:</p>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Enter Description</mat-label>
+            <input ng-model="parts" matInput placeholder="Ex. Misc error">
+          </mat-form-field>
+        </div>
+
+        <br />
+
+        <!--Input for cost of labor services-->
+        <div style="display: inline-flex;">
+          <p>Labor:</p>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Hours of Labor $50/hr</mat-label>
+            <input matInput type="number" placeholder="Ex. $100">
+          </mat-form-field>
+        </div>
+      </form>
+
+      <!--total of checked services-->
+      <p>TOTAL:  {{total.toFixed(2)}}</p>
+
+      <br />
+
+      <!--button to calculate results (not configured with pop-up message)-->
+      <button mat-raised-button color="accent" style="float: right;" (click)="total">Calculate</button>
+    </mat-card-content>
+  </mat-card>
+</div>

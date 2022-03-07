@@ -1,0 +1,105 @@
+// Title: Bob's Computer Repair Show
+// Author: Evan Durkin
+// Date: March 6, 2022
+
+@import "./theme";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+h1,
+h2 {
+  font-family: "Teko", sans-serif;
+}
+
+.mat-typography h1,
+.mat-typography h2,
+.mat-h2,
+.mat-title,
+.mat-toolbar,
+.mat-toolbar h1,
+.mat-toolbar h2,
+.mat-toolbar h3,
+.mat-toolbar h4,
+.mat-toolbar h5,
+.mat-toolbar h6 {
+  font-family: "Teko", sans-serif;
+}
+
+p,
+.mat-typography p,
+.mat-body,
+.mat-body-1,
+.mat-typography,
+.mat-checkbox-label,
+.mat-card {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14pt;
+}
+
+.logo {
+  text-align: center;
+  color: white;
+  font-size: 40pt;
+}
+
+.toolbar {
+  background-color: #29434e;
+  border-bottom: 7px solid #001c2e;
+}
+
+.mat-card {
+  background-color: #cccccc;
+  border-radius: 0px;
+  display: inline-block;
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: none;
+}
+
+mat-card.mat-card.mat-focus-indicator.main-container {
+  margin: 0 auto;
+  width: 40%;
+}
+
+// mat-card.mat-card.mat-focus-indicator {
+//   width: 100%;
+// }
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  margin-top: 15px;
+  height: fit-content;
+}
+
+h1.logo {
+  margin: 40px auto;
+  text-shadow: 4px 4px #66bb6a;
+}
+
+.mat-card-actions,
+.mat-card-subtitle,
+.mat-card-content {
+  display: inline-block;
+}
+
+.mat-form-field {
+  padding-left: 5px;
+}
+
+.mat-card > :last-child:not(.mat-card-footer),
+.mat-card-content > :last-child:not(.mat-card-footer) {
+  margin-bottom: 20px;
+}
+
+.mat-card {
+  margin-bottom: 40px;
+}

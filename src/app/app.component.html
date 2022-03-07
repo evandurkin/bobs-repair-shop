@@ -1,0 +1,25 @@
+<!--
+  Title: Bob's Computer Repair Shop
+  Author: Evan Durkin
+  Date: March 6, 2022
+-->
+
+<!--toolbar for main logo-->
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row style="display: block;">
+    <h1 class="logo" style="font-size: 48pt;">BOB'S Computer Repair Shop</h1>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br />
+
+<!--container for services card-->
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <mat-card class="main-container">
+      <mat-card-content>
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
